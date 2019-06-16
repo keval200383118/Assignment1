@@ -25,18 +25,18 @@ a {
 .textCenter{
 	text-align:center;
 }
-.skills{
-  width: 100%;
-  margin: 0 auto;
-}
 .roundedText{
 	float:left;
-	width:150px;
-	height:150px;
+	width:100px;
+	height:100px;
 	margin:10px;
-	line-height:150px;
+	line-height:100px;
 	border-radius:50%;
 	background-color:gray;
 	text-align:center;
 	
+}
+.footer{
+	float:left;
+	margin:20px;
 }
