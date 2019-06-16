@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+ // Used Bootstrap's collapsible layout to showcase projects
+ #accordion
+  .card
+    #headingOne.card-header
+      h5.mb-0
+        button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+          | Get Blood
+    #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordion')
+      .card-body
+        | I have created this application for the final year project of my bachelors. It is a mobile application for Android devices, designed to connect a blood seeker and blood donor and user can find nearby blood donor via Geo Positioning.
+  .card
+    #headingTwo.card-header
+      h5.mb-0
+        button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+          | Booklovers
+    #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+      .card-body
+        | Built a Dynamic website using HTML/CSS, PHP, and MySQL Database which will allow users to put their favorite book’s title, genre, review, link, and image and store into database. Other users can see the list of books. Administrator can create, read, update and delete records.
+  .card
+    #headingThree.card-header
+      h5.mb-0
+        button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+          | Student Score
+    #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+      .card-body
+        | Built a Windows Forms Application using C# in Visual Studio 2017 for storing student’s marks along with their details and showed Average, Total and Grades according to that and user can create, update and delete operation on Data.

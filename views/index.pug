@@ -1,29 +1,16 @@
 extends layout
 
 block content
-  // about me
-  section#about
-  .textCenter
-    h2 About Me
-    div(style='padding:10px')
-      | I am a student at Georgian College in Computer Programmer Course. I also have Bachelors in Computer Engineering. I have 2+ years of experience in developing mobile application and web applications.
-      | I make mobile applications for android devices and websites.
-    h3 Skills 
-    .skills
-      .roundedText JAVA
-      .roundedText C#
-      .roundedText HTML
-      .roundedText CSS
-      .roundedText PHP
-      .roundedText Javascript
-      .roundedText Arduino
-      .roundedText Postgres
-      .roundedText MySql
-      .roundedText MongoDb
-  // services
-  section#services
-  // projects
-  section#projects
-  // contact me
-  section#contact
+       section#index
+       .card.text-center(style='background-color:#d6d3d3 ; padding:10px; border-radius:5px; margin-right:100px; margin-left:100px; margin-top:20px;margin-bottom:20px')
+        .aboutMeImgHeader
+          img.circularImage(src='images/keval.jpg', height='200', width='200')
+        h2 Keval Patel
+        h5 Web and Mobile Application Developer
+       // services
+        section#services
+       // projects
+        section#projects
+       // contact me
+        section#contact
 
